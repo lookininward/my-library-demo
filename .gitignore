@@ -23,3 +23,8 @@ media
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# ember-try
+.node_modules.ember-try/
+bower.json.ember-try
+package.json.ember-try
