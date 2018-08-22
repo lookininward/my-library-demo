@@ -9,22 +9,22 @@ db.sqlite3
 media
 
 ### Ember ###
-/dist
-/tmp
+/client/dist
+/client/tmp
 
 # dependencies
-/node_modules
-/bower_components
+/client/node_modules
+/client/bower_components
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
+/client/.sass-cache
+/client/connect.lock
+/client/coverage/*
+/client/libpeerconnection.log
+/client/npm-debug.log
+/client/testem.log
 
 # ember-try
-.node_modules.ember-try/
-bower.json.ember-try
-package.json.ember-try
+/client/.node_modules.ember-try/
+/client/bower.json.ember-try
+/client/package.json.ember-try
