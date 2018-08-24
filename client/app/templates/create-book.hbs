@@ -1,0 +1,34 @@
+<form class="form">
+  <div class="header">
+    Add a new book
+  </div>
+
+  {{input
+    value=form.title
+    placeholder="Title"
+    autocomplete='off'
+  }}
+
+  {{input
+    value=form.author
+    placeholder="Author"
+    autocomplete='off'
+  }}
+
+  {{textarea
+    value=form.description
+    placeholder="Description"
+    rows=10
+  }}
+</form>
+
+<div class="actions">
+  <div>
+    <button {{action 'create'}}>
+      Create
+    </button>
+    <button {{action 'cancel'}}>
+      Cancel
+    </button>
+  </div>
+</div>
