@@ -9,3 +9,25 @@
     {{model.description}}
   </div>
 </div>
+
+<div class="actions {{if confirmingDelete 'u-justify-space-between'}}">
+
+  {{#if confirmingDelete}}
+
+    <div class="u-text-danger">
+      Are you sure you want to delete this book?
+    </div>
+
+    <div>
+      <button {{action 'delete' model}}>Delete</button>
+      <button {{action (mut confirmingDelete) false}}>Cancel</button>
+    </div>
+
+  {{else}}
+
+    <div>
+      <button {{action (mut confirmingDelete) true}}>Delete</button>
+    </div>
+
+  {{/if}}
+</div>
